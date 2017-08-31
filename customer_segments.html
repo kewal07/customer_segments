@@ -11866,7 +11866,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display a description of the dataset</span>
@@ -12008,7 +12008,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Select three indices of your choice you wish to sample from the dataset</span>
@@ -12156,7 +12156,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -12198,7 +12198,7 @@ div#notebook {
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(&#39;Score Is &#39;, 0.76976805337445053)
+<pre>(&#39;Score Is &#39;, 0.77353585567206795)
 </pre>
 </div>
 </div>
@@ -12223,7 +12223,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> I selected "Detergents_Paper", because it kind of felt like an odd category to be placed here. The prediction score was quite good, infact it was quite close to 80% (77.9% to be more precise). As this can be quite easy to predict from the remaining features it is not quite necessary for identifyinh spending habbit.</p>
+<p><strong>Answer:</strong> I selected "Detergents_Paper", because it kind of felt like an odd category to be placed here. The prediction score was quite good, infact it was quite close to 80% (77.35% to be more precise). As this can be quite easy to predict from the remaining features it is not quite necessary for identifyinh spending habbit.</p>
 
 </div>
 </div>
@@ -12240,7 +12240,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Produce a scatter matrix for each pair of features in the data</span>
@@ -14342,7 +14342,7 @@ All 6 features appear to be skewed right. All the features have most of the data
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Scale the data using the natural logarithm</span>
@@ -19004,7 +19004,7 @@ MGx6/h8NE4bNAQvLlgAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the log-transformed sample data</span>
@@ -19110,7 +19110,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">out</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([],</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;int64&#39;</span><span class="p">)</span>
@@ -19933,7 +19933,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
@@ -19948,6 +19948,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 
 <span class="c1"># display cumulative variance:</span>
 <span class="k">print</span> <span class="n">pca_results</span><span class="p">[</span><span class="s1">&#39;Explained Variance&#39;</span><span class="p">]</span>
+<span class="k">print</span> <span class="n">pca_results</span><span class="p">[</span><span class="s1">&#39;Explained Variance&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -19968,6 +19969,13 @@ Dimension 3    0.1231
 Dimension 4    0.1012
 Dimension 5    0.0485
 Dimension 6    0.0204
+Name: Explained Variance, dtype: float64
+Dimension 1    0.4430
+Dimension 2    0.7068
+Dimension 3    0.8299
+Dimension 4    0.9311
+Dimension 5    0.9796
+Dimension 6    1.0000
 Name: Explained Variance, dtype: float64
 </pre>
 </div>
@@ -20311,8 +20319,13 @@ Qx0mERERERGRONRhEhERERERiUMdJhERERERkTjUYRIREREREYlDHSYREREREZE4/g/6RWimMIfb
 <li>Variance explained by first component : 0.4430</li>
 <li>Variance explained by second component : 0.2638</li>
 </ul>
-<p>what the above numbers effectively mean is that, the first component explains more than 44% for any data variance and the seconds explains more than 26%. Together they explain more than 72% of the overall variance in the dataset which is quite good. Combine this with the 3rd and 4th component which explain approximately 12% and 10% of the variance, they explain more than 93% of the overall variance in the data.</p>
-<p>It looks like the in the first dimension,Detergent is the driving force, closely followed by Milk and Grocery. infact i did think there is some correlation between these. In the second dimenion the lack in information gain for Frozen and Delicatessan is made up.3rd component represents gains for Fresh and Detergents_Paper, and minimal or losses for other categories. As suggested by reviewer, this may point towards "retalai"-ness. Similarly, 4th prinicipal component represents information gains for Frozen and Detergents_Paper, and losses for others. Maybe some sea-food importer may be a good fit there.</p>
+<p>what the above numbers effectively mean is that, the first component explains more than 44% for any data variance and the seconds explains more than 26%. Together they explain more than 70% of the overall variance in the dataset which is quite good. Combine this with the 3rd and 4th component which explain approximately 12% and 10% of the variance, they explain more than 93% of the overall variance in the data.</p>
+<ul>
+<li>It looks like the in the first dimension,Detergent is the driving force, closely followed by Milk and Grocery. infact i did think there is some correlation between these. But the 1st component does not do a good job with regrads to Fresh and Frozen categories and needs another component to help. Hence if we think about this, we can argue that this represents 'convenience' or 'supermarket' spending category.</li>
+<li>In the second dimenion the lack in information gain for Frozen and Delicatessan is made up.This could represent customers who are in the hospitality or restaurant industry.</li>
+<li>3rd component represents gains for Fresh and Detergents_Paper, and minimal or losses for other categories. As suggested by reviewer, this may point towards "retalai"-ness. </li>
+<li>Similarly, 4th prinicipal component represents information gains for Frozen and Detergents_Paper, and losses for others. Maybe some sea-food importer may be a good fit there.</li>
+</ul>
 
 </div>
 </div>
@@ -20329,7 +20342,7 @@ Qx0mERERERGRONRhEhERERERiUMdJhERERERkTjUYRIREREREYlDHSYREREREZE4/g/6RWimMIfb
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display sample log-data after having a PCA transformation applied</span>
@@ -20432,7 +20445,7 @@ Qx0mERERERGRONRhEhERERERiUMdJhERERERkTjUYRIREREREYlDHSYREREREZE4/g/6RWimMIfb
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Fit PCA to the good data using only two dimensions</span>
@@ -20465,7 +20478,7 @@ Qx0mERERERGRONRhEhERERERiUMdJhERERERkTjUYRIREREREYlDHSYREREREZE4/g/6RWimMIfb
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display sample log-data after applying PCA transformation in two dimensions</span>
@@ -20547,7 +20560,7 @@ Qx0mERERERGRONRhEhERERERiUMdJhERERERkTjUYRIREREREYlDHSYREREREZE4/g/6RWimMIfb
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Create a biplot</span>
@@ -20563,12 +20576,12 @@ Qx0mERERERGRONRhEhERERERiUMdJhERERERkTjUYRIREREREYlDHSYREREREZE4/g/6RWimMIfb
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[13]:</div>
+<div class="prompt output_prompt">Out[24]:</div>
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x10e949f90&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x11c9c8d50&gt;</pre>
 </div>
 
 </div>
@@ -21736,7 +21749,7 @@ IcgEAAAAACSGIBMAAAAAkBiCTAAAAABAYggyAQAAAACJ+f8BMydkk5l4ciAAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.mixture</span> <span class="kn">import</span> <span class="n">GMM</span>
@@ -21885,7 +21898,7 @@ IcgEAAAAACSGIBMAAAAAkBiCTAAAAABAYggyAQAAAACJ+f8BMydkk5l4ciAAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">score</span> <span class="o">=</span> <span class="n">gM</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="c1"># since 2 clusters give the best score </span>
@@ -22551,7 +22564,7 @@ AKDtEAgBAAAAaDsEQgAAAADaDoEQAAAAgLbz/wHB62eMTvWmnQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Inverse transform the centers</span>
@@ -22636,12 +22649,12 @@ AKDtEAgBAAAAaDsEQgAAAADaDoEQAAAAgLbz/wHB62eMTvWmnQAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[18]:</div>
+<div class="prompt output_prompt">Out[27]:</div>
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x10f3d2e10&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x11dd65210&gt;</pre>
 </div>
 
 </div>
@@ -22920,7 +22933,7 @@ EAqQwBVCCCEUIIErhBBCKEACVwghhFDA/wNGZAXJiN+iZgAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the predictions</span>
@@ -23048,7 +23061,7 @@ I think since first segment is dominated by fresh items they may be ill effected
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the clustering results based on &#39;Channel&#39; data</span>
